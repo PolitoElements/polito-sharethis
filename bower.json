@@ -1,0 +1,23 @@
+{
+  "name": "polito-sharethis",
+  "version": "0.0.0",
+  "homepage": "https://github.com/PolitoElements/polito-sharethis",
+  "authors": [
+    "mbr4nt <mateus.brant@gmail.com>"
+  ],
+  "description": "Polymer wrapping ShareThis buttons",
+  "main": "polito-sharethis.html",
+  "keywords": [
+    "polymer",
+    "sharethis",
+    "socialmedia"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

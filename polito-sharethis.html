@@ -1,0 +1,34 @@
+<dom-module id="polito-sharethis">
+    <template>
+        <span class='st_email_large' displayText='Email'></span>
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_pinterest_large' displayText='Pinterest'></span>
+        <span class='st_linkedin_large' displayText='LinkedIn'></span>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is: "polito-sharethis",
+        properties: {
+            publisher: String
+        },
+        ready: function() {
+            console.log("polito!!");
+            var switchTo5x = true;
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "http://w.sharethis.com/button/buttons.js";
+            s.onload = function() {
+                stLight.options({
+                    publisher: this.publisher,
+                    doNotHash: false,
+                    doNotCopy: false,
+                    hashAddressBar: false
+                });
+
+            };
+            document.querySelector("head").appendChild(s);
+        }
+    })
+</script>
